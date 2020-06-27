@@ -1,0 +1,19 @@
+@import url("./mixer.css");
+html{
+    font-size:8.8px;
+}
+.container{
+    width: min(333px,85%);
+}
+.section-1{
+    flex-direction: column !important;
+}
+
+.main__nav{
+    top: 0.1rem;
+}
+
+.nav-toggle{
+    align-self: center;
+    padding: 15px 20px 30px 20px !important;
+}

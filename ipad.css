@@ -1,0 +1,7 @@
+@import url("./mixer.css");
+html{
+    font-size: 70%;
+}
+.container{
+    width: min(700px,85%);
+}

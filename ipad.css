@@ -1,7 +1,59 @@
 @import url("./mixer.css");
+/* 
+    General Stuff
+*/
 html{
-    font-size: 70%;
+    font-size: 95%;
 }
+/* 
+    Reuseable Stuff
+*/
 .container{
-    width: min(700px,85%);
+    width: min(850px,95%);
 }
+/* 
+    Direct Styling
+*/
+/* 
+===========================
+    Header
+===========================
+*/
+.main__nav{
+    top: 0rem;
+    display: block;
+    padding: 1em 1em;
+}
+
+.main__nav.active{
+    padding: 1em 1em;
+}
+
+.nav{
+    position: fixed;
+    top: 1.5em;
+    background: #212c3e;
+    left: 0;
+    padding: 0 0.6em 10px 0.6em;
+
+    background: var(--resposive-nav-bg);
+    box-shadow: 0 4px 5px -2px rgba(0,0,0,.2), 
+                0 7px 10px 1px rgba(0,0,0,.14), 
+                0 2px 16px 1px rgba(0,0,0,.12);
+}
+
+.header__slider{
+    top: 3.7rem;
+}
+/* 
+===========================
+    Showcase Section
+===========================
+*/
+.showcase__content{
+    padding-left: 0;
+}
+
+
+
+

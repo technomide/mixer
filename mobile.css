@@ -1,19 +1,97 @@
 @import url("./mixer.css");
+/* 
+    General Stuff
+*/
 html{
-    font-size:8.8px;
+    font-size: 18px;
 }
+/* 
+    Typograpy Stuff
+*/
+section{
+    padding: 5em 0;
+}
+/* 
+    Reuseable Stuff
+*/
 .container{
-    width: min(333px,85%);
+    width: min(580px,95%);
 }
 .section-1{
     flex-direction: column !important;
 }
-
+/* 
+    Direct Styling
+*/
+/* 
+===========================
+    Header
+===========================
+*/
 .main__nav{
-    top: 0.1rem;
+    top: 0rem;
+    padding: .9em 0.8em .7em 0.8em;
+}
+
+.nav{
+    top: 0.8em;
 }
 
 .nav-toggle{
     align-self: center;
-    padding: 15px 20px 30px 20px !important;
+}
+
+.main__nav.active{
+    padding: .9em 0.8em .7em 0.8em;
+}
+
+.header__slider{
+    display: none;
+}
+/* 
+===========================
+    Showcase Section
+===========================
+*/
+.showcase__content{
+    width: 70%;
+    padding-top: 0em;
+    padding-left: 0;
+    padding-bottom: 3.5em;
+
+}
+
+.showcase__section > div{
+    display: block;
+}
+
+.showcase__img{
+    width: 90%;
+    margin-left: 1.5rem;
+}
+
+
+/* 
+===========================
+    Platform Section
+===========================
+*/
+.platform__center{
+    max-width: 100%;
+}
+
+.platform-main > div{
+    display: block;
+}
+
+.platform-col + .platform-col{
+    margin-top: 2rem;
+}
+
+.platform-img{
+    width: 7rem;
+}
+
+.platform-col h1{
+    line-height: 1;
 }

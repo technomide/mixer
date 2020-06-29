@@ -7,25 +7,46 @@ navToggle.addEventListener('click', () => {
 })
 
 // 
-
 const slides = document.querySelector('.slider').children;
 const slidess = document.querySelector('.slider');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 const indicator = document.querySelector('.indicator');
+const indicators = document.querySelector('.indicator').children;
+const mainNav = document.querySelector('.main__nav');
 let index = 0;
 
 prev.addEventListener('click', function(){
   prevSlide();
+  // Call updateindicator Func
+  updateCircleIndicator();
   // Call Reset Timer Func
   resetTimer();
 })
 
 next.addEventListener("click", function(){
   nextSlide();
+  // Call updateindicator Func
+  updateCircleIndicator();
   // Call Reset Timer Func
   resetTimer();
 })
+
+// Now Create Circle Indicators
+function circleIndicator(){
+  for(let i=0; i<slides.length; i++){
+    const div = document.createElement('div');
+          div.setAttribute('onclick', 'indicateSlide(this)');
+          div.id = i;
+          if(i==0){
+            div.className='active';
+          }
+          indicator.appendChild(div);
+    // i starting from 0
+  }
+}
+// Call To circleIndicator() Func
+circleIndicator();
 
 
 // Click to Indicators indicatorSlide(this) Func
@@ -36,13 +57,22 @@ function indicateSlide(element){
   // Call Change Slide Func
   changeSlides();
 
+  // Call updateincidatorcircle Func
+  updateCircleIndicator();
 
   // Call Reset Timer Func
   resetTimer();
 }
 
+// Update Circle Indicator func
+function updateCircleIndicator(){
+ 
+  Array.from(indicators).forEach(function(itm){
+    itm.classList.remove("active");
+  })
 
-
+  indicator.children[index].classList.add("active");
+}
 
 // Prev Slide Func
 function prevSlide(){
@@ -105,14 +135,13 @@ function resetTimer(){
 function autoPlay(){
   // Call NextSlide Func
   nextSlide();
+  // Call updateindicator Func
+  updateCircleIndicator();
 }
 
 let timer=setInterval(autoPlay, 4000);
 
 // Navigation Func
-const mainNav = document.querySelector('.main__nav');
-
-// Create Function
 window.addEventListener('scroll', () => {
     if(window.pageYOffset > 30){
         mainNav.classList.add("active");

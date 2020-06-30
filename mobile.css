@@ -6,12 +6,6 @@ html{
     font-size: 18px;
 }
 /* 
-    Typograpy Stuff
-*/
-section{
-    padding: 5em 0;
-}
-/* 
     Reuseable Stuff
 */
 .container{
@@ -41,12 +35,38 @@ section{
     align-self: center;
 }
 
-.main__nav.active{
+.main__nav.activees{
     padding: .9em 0.8em .7em 0.8em;
 }
 
 .header__slider{
     display: none;
+}
+
+.header__slider--show{
+    top: 10px;
+    display: block;
+    height: 20rem;
+}
+
+.stream__content--pd{
+    top: 19% !important;
+    max-width: 100%;
+    transform: translateX(0%);
+    left: 0;
+    padding: .8em;
+}
+
+.stream__content--pd p{
+    line-height: 1;
+}
+
+.stream__content {
+    top: 0;
+}
+
+.showcase__pd{
+    padding-top: 5.1em;
 }
 /* 
 ===========================
@@ -94,4 +114,16 @@ section{
 
 .platform-col h1{
     line-height: 1;
+}
+
+.platform-col{
+    width: 100%;
+}
+/* 
+===========================
+    New to Streaming
+===========================
+*/
+.stream__col{
+    width: 100%;
 }

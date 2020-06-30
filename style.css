@@ -54,19 +54,20 @@ header{
     transition: top .5s;
 }
 
-.main__nav.active{
+.main__nav.activees{
     top: 0;
-    padding: 10px 1.6em;
-    background-color: var(--text-primary);
+    padding: 1.2em 1.6em;
+    background-color: var(--text-primary) !important;
 }
 
 .logo{
     width: 4.35rem;
 }
 
-.nav__item.active{
+.actives{
     border-bottom: 2px solid var(--text-lightblue);
     font-weight: 750;
+    color: var(--text-secondary);
 }
 
 .nav {
@@ -99,10 +100,7 @@ header{
     text-decoration: none;
     transition: color 1s;
     font-size: .85rem;
-}
-
-.nav__link.active{
-    color: var(--text-secondary);
+    opacity: 1;
 }
 
 .nav__link:hover,
@@ -139,8 +137,11 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: flex-start;
+}
 
-    /* padding-top: 4em; */
+.stream__content--pd p{
+    line-height: 1;
+    padding-bottom: .3em;
 }
 
 .slider__content .slide__content__heading{
@@ -342,18 +343,17 @@ header{
     background-color: var(--text-accent);
 }
 
-.showcase__text{
-    margin: 0;
-    margin-bottom: .5em;
+.showcase__section .section__text{
+    width: 90%;
 }
 
 .showcase__img{
-    width: 50%;
+    width: 47%;
     align-self: center;   
 }
 
 .showcase__content{
-    width: 37%;
+    width: 44%;
     padding-top:8em ;
     padding-bottom:8em ;
     padding-left: 4em;
@@ -369,6 +369,14 @@ header{
     Platform Section
 ===========================
 */
+.platfrom-col--width{
+    width: 40%;
+}
+
+.platfrom-col--width h1 span{
+    line-height: 1.1;
+}
+
 .platform-col{
     display: flex;
     flex-direction: column;
@@ -392,4 +400,74 @@ header{
     margin: auto;
     padding-bottom: 3em ;
 }
+/* 
+===========================
+    New to Streaming
+===========================
+*/
+.stream__content {
+    position: absolute;
+    top: 30%;
+    max-width: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.stream__content__tittle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: .1em;
+}
+.section-img {
+    width: 5rem;
+}
+
+.stream__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28%;
+}
+/* 
+===========================
+    Streamer Progression
+===========================
+*/
+.streamer__progression{
+
+}
+
+.benefits{
+   background-color: var(--resposive-dark-nav-bg);
+}
+
+.progression{
+    background: var(--resposive-nav-bg);
+}
+/* 
+===========================
+    Varified Channels
+===========================
+*/
+.varified__content{
+    padding: 2em 0;
+    background-color: var(--text-lightgrey3);
+    color: var(--text-lightgrey);
+}
+
+.varified__text{
+    font-size: .65rem;
+    font-style: italic;
+    letter-spacing: .5px;
+}
+
+/* .header__slider{
+    background: rgba(19, 28, 44, .5);
+} */
+
+/* .header__gradient{
+    background-color: rgba(0, 0, 0, .2);
+    opacity: .8;
+} */
 

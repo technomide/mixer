@@ -25,7 +25,7 @@ html{
     padding: 1em 1em;
 }
 
-.main__nav.active{
+.main__nav.activees{
     padding: 1em 1em;
 }
 
@@ -44,6 +44,10 @@ html{
 
 .header__slider{
     top: 3.7rem;
+}
+
+.stream__content {
+    top: 13%;
 }
 /* 
 ===========================

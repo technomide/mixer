@@ -44,7 +44,7 @@ ul{
   Reuseable Stuff
 */
 .container{
-  width: min(1150px, 95%);
+  width: min(1250px, 95%);
   margin: 0px auto;
 }
 
@@ -56,10 +56,12 @@ ul{
 :root{
   --text-primary: #29374a;
   --resposive-nav-bg: #212c3e;
+  --resposive-dark-nav-bg: #141828;
   --text-secondary: #ffffff;
   --text-accent: #1d243a; 
   --text-lightgrey: hsla(0,0%,100%,.72);
   --text-lightgrey2: hsla(0,0%,100%,.3);
+  --text-lightgrey3: rgb(47, 62, 88);
   --text-blue: #0270d9;
   --text-lightblue: #00bcf2;
   --font-family-raleway : 'Raleway', sans-serif;
@@ -169,7 +171,7 @@ color: var(--text-accent);
 }
 
 .line-height-1-3{
-  line-height: 1.3;
+  line-height: 1.4;
 }
 
 .letter-spacing{
@@ -178,4 +180,21 @@ color: var(--text-accent);
 
 .space__around{
   justify-content: space-evenly;
+}
+.line-height-8{
+  line-height: .8;
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  border-radius: 10px;
+  background-color: var(--resposive-dark-nav-bg);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #2a374a;
+  border-radius: 10px;
 }

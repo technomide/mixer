@@ -7,14 +7,26 @@ navToggle.addEventListener('click', () => {
 })
 
 // 
+const mainNav = document.querySelector('.main__nav');
+// Navigation Func
+window.addEventListener('scroll', () => {
+  if(window.pageYOffset > 30){
+      mainNav.classList.add("activees");
+  
+  }else{
+      mainNav.classList.remove("activees");
+  }
+});
+
 const slides = document.querySelector('.slider').children;
 const slidess = document.querySelector('.slider');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
 const indicator = document.querySelector('.indicator');
 const indicators = document.querySelector('.indicator').children;
-const mainNav = document.querySelector('.main__nav');
 let index = 0;
+
+
 
 prev.addEventListener('click', function(){
   prevSlide();
@@ -140,12 +152,3 @@ function autoPlay(){
 }
 
 let timer=setInterval(autoPlay, 4000);
-
-// Navigation Func
-window.addEventListener('scroll', () => {
-    if(window.pageYOffset > 30){
-        mainNav.classList.add("active");
-    }else{
-        mainNav.classList.remove("active");
-    }
-});

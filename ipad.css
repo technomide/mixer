@@ -49,6 +49,10 @@ html{
 .stream__content {
     top: 13%;
 }
+
+.slider__content .slide__content__heading{
+    font-size: 1.1rem;
+}
 /* 
 ===========================
     Streamer Progression

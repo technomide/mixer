@@ -346,7 +346,7 @@ header{
 }
 
 .showcase__img{
-    width: 47%;
+    width: 40%;
     align-self: center;   
 }
 
@@ -390,7 +390,7 @@ header{
 }
 
 .platform-img{
-    width: 7rem;
+    width: 6rem;
 }
 
 .platform__text{
@@ -404,7 +404,7 @@ header{
 .platform__center{
     max-width: 50%;
     margin: auto;
-    padding-bottom: 3em ;
+    padding-bottom: 4.5em ;
 }
 /* 
 ===========================
@@ -575,7 +575,7 @@ header{
 }
 
 .partnership__content__img{
-    width: 13.5rem;
+    width: 10rem;
 }
 
 .partnership__sidebar{
@@ -768,11 +768,21 @@ header{
 
 /* new img update new to streaming */
 .img--size{
-    max-width: 80% !important;
+    width: 19rem !important;
     height: 13.5rem;
 }
 
 .img--size-lg{
-    max-width: 80% !important;
+    max-width: 17rem !important;
     height: 18rem;
+}
+
+.pd-l-0{
+    padding-left: 0;
+}
+
+/* new img update streaming progression */
+.progression-img--size{
+    width: 6rem;
+    height: 6rem;
 }

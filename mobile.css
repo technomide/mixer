@@ -77,6 +77,15 @@ html{
 .showcase__pd{
     padding-top: 5.1em;
 }
+
+.mlr-auto{
+    margin: 0 auto;
+}
+
+.ml-22{
+    margin-left: 15% !important;
+}
+
 /* 
 ===========================
     Streamer Progression

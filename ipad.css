@@ -51,13 +51,49 @@ html{
 }
 /* 
 ===========================
+    Streamer Progression
+===========================
+*/
+
+.benefits{
+    margin-top: 3rem;
+ }
+
+/* 
+===========================
     Showcase Section
 ===========================
 */
 .showcase__content{
     padding-left: 0;
+    padding-top: 2.5em;
+    padding-bottom: 3em;
 }
 
+/* 
+===========================
+    Partnership
+===========================
+*/
 
+.nav-toggle{
+    top: 0.9rem; 
+}
 
+.nav__list {
+    top: 1.6rem; 
+}
+
+.main__nav{
+    background-color: var(--text-primary);
+}
+
+.nav{
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+
+.logo{
+    align-self: flex-start;
+}
 

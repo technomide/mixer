@@ -57,11 +57,15 @@ ul{
   --text-primary: #29374a;
   --resposive-nav-bg: #212c3e;
   --resposive-dark-nav-bg: #141828;
+  --resposive-dark-nav-bg2: #2a374a;
   --text-secondary: #ffffff;
   --text-accent: #1d243a; 
   --text-lightgrey: hsla(0,0%,100%,.72);
   --text-lightgrey2: hsla(0,0%,100%,.3);
   --text-lightgrey3: rgb(47, 62, 88);
+  --text-lightgrey4: rgba(0,0,0,0.8);
+  --text-lightgrey5: #9fa4ae;
+  --text-lightgrey6: #9ca3aa;
   --text-blue: #0270d9;
   --text-lightblue: #00bcf2;
   --font-family-raleway : 'Raleway', sans-serif;
@@ -129,6 +133,10 @@ color: var(--text-accent);
   font-weight: 750;
 }
 
+.font-weight-600{
+  font-weight: 600;
+}
+
 .font-weight-400{
   font-weight: 400;
 }
@@ -147,6 +155,10 @@ color: var(--text-accent);
 
 .border-radius--20{
   border-radius: 20px;
+}
+
+.border-radius--4{
+  border-radius: 4px;
 }
 
 .border-radius--100{
@@ -183,6 +195,14 @@ color: var(--text-accent);
 }
 .line-height-8{
   line-height: .8;
+}
+
+.display-inline-block{
+  display: inline-block;
+}
+
+.line-height-1-2{
+  line-height: 1.2;
 }
 
 ::-webkit-scrollbar{

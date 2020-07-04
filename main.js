@@ -1,14 +1,14 @@
+// Burger Nav
 const navToggle = document.querySelector('.nav-toggle');
 const nav = document.querySelector('.nav');
-
 
 navToggle.addEventListener('click', () => {
     nav.classList.toggle('nav--visible');
 })
 
-// 
+// Sticky Nav
 const mainNav = document.querySelector('.main__nav');
-// Navigation Func
+// Sticky Nav Func
 window.addEventListener('scroll', () => {
   if(window.pageYOffset > 30){
       mainNav.classList.add("activees");
@@ -18,6 +18,7 @@ window.addEventListener('scroll', () => {
   }
 });
 
+// UI Elements
 const slides = document.querySelector('.slider').children;
 const slidess = document.querySelector('.slider');
 const prev = document.querySelector('.prev');
@@ -27,7 +28,7 @@ const indicators = document.querySelector('.indicator').children;
 let index = 0;
 
 
-
+// Slider Func
 prev.addEventListener('click', function(){
   prevSlide();
   // Call updateindicator Func

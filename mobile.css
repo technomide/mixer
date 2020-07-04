@@ -46,7 +46,12 @@ html{
 .header__slider--show{
     top: 10px;
     display: block;
-    height: 20rem;
+    height: 22rem;
+}
+
+.header__slider--show img{
+    object-fit: cover;
+    object-position: center;
 }
 
 .stream__content--pd{
@@ -55,6 +60,10 @@ html{
     transform: translateX(0%);
     left: 0;
     padding: .8em;
+}
+
+.stream__content--pd2{
+    top: 15% !important;
 }
 
 .stream__content--pd p{
@@ -68,6 +77,15 @@ html{
 .showcase__pd{
     padding-top: 5.1em;
 }
+/* 
+===========================
+    Streamer Progression
+===========================
+*/
+
+.benefits{
+    margin-top: 0rem;
+ }
 /* 
 ===========================
     Showcase Section

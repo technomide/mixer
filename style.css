@@ -765,3 +765,14 @@ header{
     opacity: 0.1;
     filter: grayscale(1);
 }
+
+/* new img update new to streaming */
+.img--size{
+    max-width: 80% !important;
+    height: 13.5rem;
+}
+
+.img--size-lg{
+    max-width: 80% !important;
+    height: 18rem;
+}

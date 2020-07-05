@@ -767,13 +767,13 @@ header{
 
 /* new img update new to streaming */
 .img--size{
-    width: 19rem !important;
-    height: 13.5rem;
+    width: 14rem;
+    height: 12rem;
 }
 
 .img--size-lg{
-    max-width: 17rem !important;
-    height: 18rem;
+    max-width: 16rem;
+    height: 17rem;
 }
 
 .pd-l-0{

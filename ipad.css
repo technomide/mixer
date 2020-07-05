@@ -53,6 +53,16 @@ html{
 .slider__content .slide__content__heading{
     font-size: 1.1rem;
 }
+
+.img--size{
+    width: 13rem !important;
+    height: 10rem;
+}
+
+.img--size-lg{
+    width: 13rem !important;
+    height: 12rem;
+}
 /* 
 ===========================
     Streamer Progression

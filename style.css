@@ -581,7 +581,6 @@ header{
 .partnership__sidebar{
     width: 35%;
     background: #141828;
-    height: 100vh;
 
     overflow-y: scroll;
     overflow-x: hidden;

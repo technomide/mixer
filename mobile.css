@@ -86,6 +86,10 @@ html{
     margin-left: 15% !important;
 }
 
+.pd-bottom3em{
+    padding-bottom: 2.4em;
+}
+
 /* 
 ===========================
     Streamer Progression
@@ -94,6 +98,7 @@ html{
 
 .benefits{
     margin-top: 0rem;
+    padding-top: 3.5em;
  }
 /* 
 ===========================
@@ -112,6 +117,7 @@ html{
 
 .showcase__section > div{
     display: block;
+    text-align: center;
 }
 
 .stream__col{
@@ -142,6 +148,9 @@ html{
     width: 100%;
 }
 
+.showcase-mt-tab{
+    margin-top: 0;
+}
 /* 
 ===========================
     Platform Section
